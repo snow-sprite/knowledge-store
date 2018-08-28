@@ -6,7 +6,7 @@ import * as types from './mutation-types'
 const mutations = {
   [types.GET_RANDOM_SONG] (state) {
     return new Promise((resolve, reject) => {
-      let randomId = utils.getRandomItem(songs)
+      var randomId = utils.getRandomItem(songs)
       state.playSong.id = songs[randomId].id
       state.playSong.name = songs[randomId].name
       state.playSong.imgUlr = songs[randomId].imgUlr

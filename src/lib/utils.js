@@ -4,13 +4,15 @@ const utils = {
     return Math.floor(Math.random() * (arr.length))
   },
   playOrPause () {
-    let _domEle = document.querySelector('audio')
-    if (_domEle) {
+    try {
+      let _domEle = document.querySelector('audio')
       if (_domEle.paused) {
         _domEle.play()
       } else {
         _domEle.pause()
       }
+    } catch (e) {
+        console.error(e)
     }
   }
 }

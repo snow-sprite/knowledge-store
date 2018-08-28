@@ -2,7 +2,7 @@
   <footer>
     <ul>
       <li class="music-operation">
-        <p>{{playSong.name}}</p>
+        <!-- <p>{{playSong.name}}</p> -->
         <p class="swap-icon">
           <img :src="playSong.imgUlr" class="song-icon" />
           <span class="icon-cover"></span>
@@ -85,10 +85,8 @@ footer {
   position: absolute;
   left: 0;
   top: 5px;
-  /* background:transparent; */
   opacity: .5;
   background: url(http://image.kuwo.cn/website/pc/singles/splice.png) no-repeat center;
-  /* background-size: 140px 140px; */
 }
 .song-icon {
   width: 100%;
@@ -101,7 +99,7 @@ footer {
   height: 30px;
   position: absolute;
   left: 25px;
-  top: 48px;
+  top: 25px;
 }
 .play-pause .play, .pause {
   width: 100%;
