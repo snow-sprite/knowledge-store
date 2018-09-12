@@ -12,7 +12,7 @@ const utils = {
         _domEle.pause()
       }
     } catch (e) {
-        console.error(e)
+      console.error(e)
     }
   }
 }
