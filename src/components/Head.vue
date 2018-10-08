@@ -1,6 +1,6 @@
 <template>
   <header>
-    叫我头部！！
+    <router-link :to="{ name: `Main${item.toUpperCase()}` }" v-for="(item, ind) in nav" :key="ind"><span>{{item}}  </span></router-link>
   </header>
 </template>
 
@@ -8,7 +8,9 @@
 export default {
   name: 'Head',
   data () {
-    return {}
+    return {
+      nav: ['a', 'b', 'c', 'd']
+    }
   }
 }
 </script>

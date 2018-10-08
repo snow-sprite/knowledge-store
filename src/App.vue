@@ -2,8 +2,8 @@
   <div id="app">
     <Head />
     <router-view/>
-    <Home />
-    <Foot />
+    <!-- <Home /> -->
+    <!-- <Foot /> -->
   </div>
 </template>
 
